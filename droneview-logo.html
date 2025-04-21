@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DroneView Logo</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="droneview-styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <div class="drone-icon">
+                <div class="drone-body">
+                    <div class="drone-camera"></div>
+                </div>
+                <div class="drone-arm drone-arm-1">
+                    <div class="propeller propeller-1">
+                        <div class="propeller-blade"></div>
+                        <div class="propeller-blade"></div>
+                    </div>
+                </div>
+                <div class="drone-arm drone-arm-2">
+                    <div class="propeller propeller-2">
+                        <div class="propeller-blade"></div>
+                        <div class="propeller-blade"></div>
+                    </div>
+                </div>
+                <div class="drone-arm drone-arm-3">
+                    <div class="propeller propeller-3">
+                        <div class="propeller-blade"></div>
+                        <div class="propeller-blade"></div>
+                    </div>
+                </div>
+                <div class="drone-arm drone-arm-4">
+                    <div class="propeller propeller-4">
+                        <div class="propeller-blade"></div>
+                        <div class="propeller-blade"></div>
+                    </div>
+                </div>
+                <div class="drone-signal"></div>
+            </div>
+            <div class="logo-text">
+                <div class="brand-name">DroneView</div>
+                <div class="tagline">Real-time Monitoring</div>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button id="animate-btn" class="control-btn">Animate</button>
+            <button id="stop-btn" class="control-btn">Stop</button>
+            <label class="control-switch">
+                <input type="checkbox" id="dark-mode-toggle">
+                <span class="switch-slider"></span>
+                <span class="switch-label">Dark Mode</span>
+            </label>
+        </div>
+        
+        <div class="color-options">
+            <div class="color-option">
+                <label>Primary Color</label>
+                <input type="color" id="primary-color" value="#1E88E5">
+            </div>
+            <div class="color-option">
+                <label>Secondary Color</label>
+                <input type="color" id="secondary-color" value="#0D47A1">
+            </div>
+        </div>
+        
+        <div class="export-section">
+            <button id="export-svg-btn" class="export-btn">Export as SVG</button>
+            <div id="svg-code" class="code-preview"></div>
+        </div>
+    </div>
+
+    <script src="droneview-script.js"></script>
+</body>
+</html>
